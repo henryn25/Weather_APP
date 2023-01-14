@@ -46,7 +46,7 @@ $(document).ready(function () {
   
       $.ajax({
         type: "GET",
-        url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=7926e9ccf8bba60c8c2802b8ab1aa278",
   
   
       }).then(function (data) {
@@ -76,7 +76,7 @@ $(document).ready(function () {
   
         $.ajax({
           type: "GET",
-          url: "https://api.openweathermap.org/data/2.5/uvi?appid=9f112416334ce37769e5c8683b218a0d&lat=" + lat + "&lon=" + lon,
+          url: "https://api.openweathermap.org/data/2.5/uvi?appid=7926e9ccf8bba60c8c2802b8ab1aa278&lat=" + lat + "&lon=" + lon,
   
   
         }).then(function (response) {
@@ -113,7 +113,7 @@ $(document).ready(function () {
     function weatherForecast(searchTerm) {
       $.ajax({
         type: "GET",
-        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchTerm + "&appid=7926e9ccf8bba60c8c2802b8ab1aa278&units=imperial",
   
       }).then(function (data) {
         console.log(data);
